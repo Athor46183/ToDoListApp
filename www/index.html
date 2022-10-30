@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="lib/jquery.js"></script>
+        <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.css">
+        <script src="lib/jquery.mobile-1.4.5.js"></script>        
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js"></script>
+        <title>To Do List App</title>
+    </head>
+    <body>
+        <div data-role="header">
+            <h1>To Do List App</h1> 
+        </div>
+            <div role="main" class="ui-content">
+                <label for="task">Ajouter tache</label>
+                <input type="text" id="task">
+                <input type="button"  value="Ajouter" onclick="addTask()">
+                <input type="button" value="reinitialiser" onclick="reinisialiser()">
+                <div>
+                <h3>Tache en cours</h3>
+                <ul id="taskList" data-role="listview" >
+                   
+                </ul>
+
+                <h3>Tache terminé</h3>
+                <ul id="taskEnd" data-role="listview">
+                    
+                </ul>
+            </div>
+               
+                <div data-role="footer" data-position="fixed">
+                    <h1>M1IABD</h1>
+                </div>
+            </div>
+       
+        
+        
+    </body>
+</html>
